@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Bucle de calidad de ManuLOOP</title>
+  <desc id="desc">ManuLOOP ejecuta exploradores en paralelo, valida un plan, pasa por jueces independientes, construye, prueba, repara y sólo termina con PASSED o BLOCKED.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1528"/>
+      <stop offset="1" stop-color="#1c3151"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f6d81"/>
+      <stop offset="1" stop-color="#214667"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity=".34"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#8bdcf2"/>
+    </marker>
+    <marker id="arrowWarm" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#f4c466"/>
+    </marker>
+    <marker id="arrowMint" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#9de2bb"/>
+    </marker>
+    <style>
+      .ui { font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .title { font-size: 42px; font-weight: 750; fill: #f7fcff; }
+      .subtitle { font-size: 20px; fill: #b7ccdf; }
+      .label { font-size: 21px; font-weight: 700; fill: #f7fcff; }
+      .body { font-size: 16px; fill: #c1d3e3; }
+      .small { font-size: 15px; fill: #a6bdd2; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="1470" cy="110" r="240" fill="#3b8aa3" opacity=".14"/>
+  <circle cx="110" cy="820" r="250" fill="#3b5f9e" opacity=".12"/>
+
+  <g class="ui">
+    <text x="86" y="92" class="title">ManuLOOP · build → verify → judge → fix</text>
+    <text x="86" y="130" class="subtitle">Un coordinador auditable: cada avance necesita evidencia y una barra medible</text>
+
+    <g filter="url(#shadow)">
+      <rect x="88" y="220" width="205" height="134" rx="22" fill="#173354" stroke="#6fa5d0" stroke-width="2"/>
+      <rect x="333" y="220" width="205" height="134" rx="22" fill="#173354" stroke="#6fa5d0" stroke-width="2"/>
+      <rect x="578" y="220" width="205" height="134" rx="22" fill="url(#core)" stroke="#8bdcf2" stroke-width="2"/>
+      <rect x="823" y="220" width="205" height="134" rx="22" fill="#173354" stroke="#6fa5d0" stroke-width="2"/>
+      <rect x="1068" y="220" width="205" height="134" rx="22" fill="#173354" stroke="#6fa5d0" stroke-width="2"/>
+      <rect x="1313" y="220" width="205" height="134" rx="22" fill="#3b3020" stroke="#f4c466" stroke-width="2"/>
+    </g>
+    <path d="M293 287 H333" fill="none" stroke="#8bdcf2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M538 287 H578" fill="none" stroke="#8bdcf2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M783 287 H823" fill="none" stroke="#8bdcf2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M1028 287 H1068" fill="none" stroke="#8bdcf2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M1273 287 H1313" fill="none" stroke="#f4c466" stroke-width="4" marker-end="url(#arrowWarm)"/>
+
+    <text x="190" y="264" class="label" text-anchor="middle">Scouts</text>
+    <text x="190" y="298" class="body" text-anchor="middle">fan-out paralelo</text>
+    <text x="190" y="325" class="body" text-anchor="middle">arquitectura · tests · riesgo</text>
+    <text x="435" y="264" class="label" text-anchor="middle">Plan</text>
+    <text x="435" y="298" class="body" text-anchor="middle">sin editar</text>
+    <text x="435" y="325" class="body" text-anchor="middle">workstreams + checks</text>
+    <text x="680" y="264" class="label" text-anchor="middle">Preflight</text>
+    <text x="680" y="298" class="body" text-anchor="middle">jueces independientes</text>
+    <text x="680" y="325" class="body" text-anchor="middle">PASS antes de tocar</text>
+    <text x="925" y="264" class="label" text-anchor="middle">Builder</text>
+    <text x="925" y="298" class="body" text-anchor="middle">edición serializada</text>
+    <text x="925" y="325" class="body" text-anchor="middle">workstream activo</text>
+    <text x="1170" y="264" class="label" text-anchor="middle">Checks</text>
+    <text x="1170" y="298" class="body" text-anchor="middle">pruebas explícitas</text>
+    <text x="1170" y="325" class="body" text-anchor="middle">evidencia determinista</text>
+    <text x="1415" y="264" class="label" text-anchor="middle">Judge</text>
+    <text x="1415" y="298" class="body" text-anchor="middle">PASS / findings</text>
+    <text x="1415" y="325" class="body" text-anchor="middle">fresh context</text>
+
+    <path d="M1415 354 V458 H1170 V510" fill="none" stroke="#f4c466" stroke-width="4" marker-end="url(#arrowWarm)"/>
+    <g filter="url(#shadow)">
+      <rect x="650" y="510" width="610" height="112" rx="24" fill="#3b3020" stroke="#f4c466" stroke-width="3"/>
+    </g>
+    <text x="955" y="553" class="label" text-anchor="middle">Si falla: fixer + siguiente ronda</text>
+    <text x="955" y="588" class="body" text-anchor="middle">corregir → volver a probar → volver a juzgar</text>
+
+    <path d="M650 566 H560 V410 H1170 V354" fill="none" stroke="#f4c466" stroke-width="4" marker-end="url(#arrowWarm)"/>
+    <path d="M1518 287 H1550 V660 H348 V696" fill="none" stroke="#9de2bb" stroke-width="3" stroke-dasharray="10 10" marker-end="url(#arrowMint)"/>
+    <text x="1538" y="410" class="small" text-anchor="end">PASS</text>
+    <g filter="url(#shadow)">
+      <rect x="88" y="696" width="520" height="110" rx="22" fill="#173354" stroke="#6fa5d0" stroke-width="2"/>
+    </g>
+    <text x="348" y="738" class="label" text-anchor="middle">Integración + optimización</text>
+    <text x="348" y="774" class="body" text-anchor="middle">evidence final · estado recuperable</text>
+
+    <path d="M608 751 H760" fill="none" stroke="#8bdcf2" stroke-width="4" marker-end="url(#arrow)"/>
+    <g filter="url(#shadow)">
+      <rect x="760" y="696" width="300" height="110" rx="22" fill="#173354" stroke="#6fa5d0" stroke-width="2"/>
+      <rect x="1112" y="696" width="400" height="110" rx="22" fill="#214b3f" stroke="#9de2bb" stroke-width="2"/>
+    </g>
+    <text x="910" y="738" class="label" text-anchor="middle">Juez final</text>
+    <text x="910" y="774" class="body" text-anchor="middle">revisa artefacto + claims</text>
+    <path d="M1060 751 H1112" fill="none" stroke="#9de2bb" stroke-width="4" marker-end="url(#arrowMint)"/>
+    <text x="1312" y="738" class="label" text-anchor="middle">Gate de salida</text>
+    <text x="1312" y="774" class="body" text-anchor="middle">PASSED con evidencia · BLOCKED si no mide</text>
+    <text x="800" y="860" class="small" text-anchor="middle">La retórica no sustituye la prueba: el usuario define los --check y la barra de calidad.</text>
+  </g>
+</svg>

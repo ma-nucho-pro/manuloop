@@ -19,6 +19,10 @@ builder → pruebas → juez → fixer → pruebas → juez
 integración/optimización → juez final → gate de salida
 ~~~
 
+<p align="center">
+  <img src="docs/assets/manuloop-loop.svg" alt="Diagrama del loop de ManuLOOP: scouts, plan, jueces preflight, builder, checks, fixer, integración y gate final" width="100%">
+</p>
+
 El loop no afirma que algo sea “absolutamente perfecto” por retórica. Solo
 termina con PASSED cuando los jueces y las comprobaciones deterministas
 configuradas pasan. Si la afirmación no puede medirse, termina en BLOCKED.
