@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "provider": "codex",
+  "judge_provider": "auto",
+  "scout_count": 4,
+  "judge_count": 2,
+  "preflight_rounds": 2,
+  "max_rounds": 3,
+  "timeout_seconds": 1800,
+  "allow_edits": false,
+  "allow_no_checks": false,
+  "integration_pass": true,
+  "checks": [
+    "pytest -q",
+    "npm run typecheck",
+    "npm run build"
+  ],
+  "providers": {
+    "custom": {
+      "command": ["mi-harness", "--prompt", "{prompt}", "--json"],
+      "readonly_command": [
+        "mi-harness",
+        "--prompt",
+        "{prompt}",
+        "--read-only",
+        "--json"
+      ],
+      "output": "json"
+    }
+  }
+}

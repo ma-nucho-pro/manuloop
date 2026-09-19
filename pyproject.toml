@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manuloop"
+version = "0.1.0"
+description = "Local, auditable build-judge-fix loop for Claude Code, Codex, Gemini CLI, and custom agent harnesses."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ManuLOOP contributors" }]
+dependencies = []
+
+[project.scripts]
+manuloop = "manuloop.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["manuloop*"]

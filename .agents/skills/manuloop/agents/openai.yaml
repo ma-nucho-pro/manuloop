@@ -1,0 +1,4 @@
+interface:
+  display_name: "ManuLOOP"
+  short_description: "Loop build-juez-fix con evidencia"
+  default_prompt: "Usa $manuloop para implementar este objetivo con jueces, pruebas y correcciones hasta superar la barra de calidad."
