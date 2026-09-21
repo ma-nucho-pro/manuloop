@@ -1,3 +1,9 @@
+<!-- manucho-readme-banner:start -->
+<p align="center">
+  <img src="assets/readme/banner.svg" alt="MANULOOP project overview" width="100%">
+</p>
+<!-- manucho-readme-banner:end -->
+
 # ManuLOOP
 
 ManuLOOP es un coordinador local y auditable para ejecutar un ciclo de calidad
